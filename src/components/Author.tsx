@@ -1,4 +1,5 @@
 import { urlFor } from "@/sanity/lib/image";
+import { SanityImageCrop, SanityImageHotspot } from "@/sanity/types";
 import Image from "next/image";
 type AuthorType = {
   name: string | null;
@@ -9,8 +10,8 @@ type AuthorType = {
       _weak?: boolean;
     };
     media?: unknown;
-    hotspot?: any;
-    crop?: any;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
     _type: "image";
   } | null;
 } | null;
